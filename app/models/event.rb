@@ -3,7 +3,7 @@ class Event < ApplicationRecord
     has_many :users, through: :attendances
 
 
-    validates :start_date, comparison {greater_than: Time.current}
+    validates :start_date, presence: true, comparison {greater_than: Time.current}
     validates :duration, numericality { only_integer: true }
     validates :title, presence: true, length: { minimum: 5, maximum: 140 } 
     validates :description, presence: true, length: { minimum: 20, maximum: 1000 },  

@@ -26,7 +26,8 @@ User.destroy_all
         first_name: Faker::Name.first_name,
         last_name: Faker::Name.last_name,
         email: Faker::Internet.email(domain: 'yopmail.com'),
-    )
+        description: Fakker::Lorem.paragraph,
+        )
     puts "*"*(i+1)
     puts "#{i+1} user(s) created"
 end
