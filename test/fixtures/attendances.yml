@@ -1,7 +1,9 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  stripe_customer_id: MyString
+  users: one
+  events: one
 
 two:
-  stripe_customer_id: MyString
+  users: two
+  events: two
